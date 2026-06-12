@@ -3,125 +3,233 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aakash Damani</title>
+  <title>Aakash Damani — Golden Hour</title>
+  <meta name="description" content="Aakash Damani. Marketing, sales, sport and salt air. Kolkata, City of Joy." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- grain + glow layers -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ── NAV ── -->
   <nav class="nav">
-    <span class="nav-name">Aakash Damani</span>
+    <a href="#top" class="nav-mark">
+      <span class="nav-sun" aria-hidden="true"></span>
+      Aakash Damani
+    </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#values">Values</a></li>
       <li><a href="#loves">Loves</a></li>
+      <li><a href="#blog">Blog</a></li>
       <li><a href="#connect">Connect</a></li>
     </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="toggle-track"><span class="toggle-thumb"></span></span>
+    </button>
   </nav>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-photo-wrap">
-        <div class="hero-photo-placeholder">AD</div>
-      </div>
-      <h1 class="hero-name">Aakash Damani</h1>
-      <p class="hero-tagline">"Be like water, my friend."</p>
-      <p class="hero-sub">Fluid. Adaptive. Always moving forward.</p>
-    </div>
-    <div class="hero-scroll-hint">↓</div>
-  </section>
+  <!-- ── HERO ── -->
+  <header class="hero" id="top">
+    <!-- 3D layer: paste your Spline scene URL into data-spline-url below.
+         Until then, the CSS sun fallback shows automatically. -->
+    <div class="hero-3d" id="hero3d" data-spline-url="" aria-hidden="true"></div>
 
-  <section class="about" id="about">
-    <div class="container">
-      <span class="section-label">About</span>
-      <h2 class="section-title">A little about me</h2>
-      <div class="about-body">
-        <p>
-          I believe the most interesting people are the ones who refuse to be poured into a single shape. Like water, I find a way — through curiosity, conversation, and a willingness to adapt.
-        </p>
-        <p>
-          This is my small corner of the internet. A place to share what I'm thinking, what I'm building, and what I care about. No polished brand speak — just me, honest and ongoing.
-        </p>
-        <p>
-          If something here resonates with you, I'd love to hear from you.
-        </p>
-      </div>
-    </div>
-  </section>
+    <div class="hero-sun" aria-hidden="true"></div>
+    <div class="hero-horizon" aria-hidden="true"></div>
 
-  <section class="values" id="values">
-    <div class="container">
-      <span class="section-label">What I care about</span>
-      <h2 class="section-title">Things that drive me</h2>
-      <div class="values-grid">
-        <div class="value-card">
-          <span class="value-icon">◎</span>
-          <h3>Adaptability</h3>
-          <p>Rigid things break. Water flows around obstacles. I try to meet every situation with openness rather than a fixed script.</p>
-        </div>
-        <div class="value-card">
-          <span class="value-icon">◈</span>
-          <h3>Depth over noise</h3>
-          <p>I'd rather have one genuine conversation than a hundred shallow ones. Quality of thought, relationship, and work — always.</p>
-        </div>
-        <div class="value-card">
-          <span class="value-icon">◇</span>
-          <h3>Continuous growth</h3>
-          <p>I'm not the same person I was a year ago — and I'm glad for it. Growth isn't a destination; it's the direction.</p>
-        </div>
-        <div class="value-card">
-          <span class="value-icon">○</span>
-          <h3>Human connection</h3>
-          <p>Ideas are interesting. People are fascinating. The best things in my life have come from a genuine exchange with another person.</p>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Kolkata · City of Joy</span>
+      <h1 class="hero-title">
+        <span class="line">Be like</span>
+        <span class="line line--accent">water,</span>
+        <span class="line">my friend.</span>
+      </h1>
+      <p class="hero-sub">
+        I figure out what makes people tick. Then I sell them something.
+        They usually thank me for it.
+      </p>
+      <div class="hero-meta">
+        <img class="hero-photo" src="assets/aakash.jpeg" alt="Aakash Damani" />
+        <div class="hero-meta-text">
+          <strong>Aakash Damani</strong>
+          <span>Sales soul, marketing mind. Sport &amp; salt air.</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <section class="loves" id="loves">
-    <div class="container">
-      <span class="section-label">Things I love</span>
-      <h2 class="section-title">Life outside the screen</h2>
-      <div class="loves-grid">
-        <div class="love-item">
-          <span class="love-emoji">🏏</span>
-          <h3>Outdoor sports</h3>
-          <p>Cricket, football, pickleball — if it's outside and competitive, I'm in. Sport teaches you more about people than most things in life.</p>
-        </div>
-        <div class="love-item">
-          <span class="love-emoji">🎸</span>
-          <h3>Jamming</h3>
-          <p>There's something about music that words can't quite capture. I love losing track of time in a good session.</p>
-        </div>
-        <div class="love-item">
-          <span class="love-emoji">🌊</span>
-          <h3>Traveling & beaches</h3>
-          <p>New places, new perspectives. I'm most at peace near the ocean — something about the water always brings me back to myself.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </header>
 
-  <section class="connect" id="connect">
-    <div class="container connect-inner">
-      <span class="section-label">Connect</span>
-      <h2 class="section-title">Let's talk</h2>
-      <p class="connect-body">Whether you want to share an idea, collaborate, or just say hello — my inbox is open.</p>
-      <a href="mailto:aakashdamani07@gmail.com" class="btn-primary">Say hello →</a>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/aakash-damani-a11201180/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
-        <span class="social-dot">·</span>
-        <a href="https://www.instagram.com/aakash_damani?igsh=MTQxbjd2djByZGo2dQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-link">Instagram</a>
-      </div>
+  <!-- ── INTERESTS TICKER ── -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Cricket</span><i>✦</i><span>Beaches</span><i>✦</i><span>Football</span><i>✦</i><span>Sufi nights</span><i>✦</i><span>Pickleball</span><i>✦</i><span>Salt air</span><i>✦</i><span>Marketing</span><i>✦</i><span>Golden hour</span><i>✦</i>
+      <span>Cricket</span><i>✦</i><span>Beaches</span><i>✦</i><span>Football</span><i>✦</i><span>Sufi nights</span><i>✦</i><span>Pickleball</span><i>✦</i><span>Salt air</span><i>✦</i><span>Marketing</span><i>✦</i><span>Golden hour</span><i>✦</i>
     </div>
-  </section>
+  </div>
+
+  <main>
+
+    <!-- ── ABOUT ── -->
+    <section class="section about reveal" id="about">
+      <div class="container">
+        <span class="section-index">01</span>
+        <span class="section-label">About</span>
+        <h2 class="section-title">A little about me</h2>
+        <div class="prose">
+          <p>I've never really fit into one box and honestly I stopped trying a long time ago. I'm curious about a lot of things, I ask too many questions, and I genuinely enjoy figuring out how people and ideas connect.</p>
+          <p>This little corner of the internet is just a space for me to share what's on my mind, what I'm up to, and what I believe in. Nothing curated, nothing over-thought. Just me.</p>
+          <p>If something here feels familiar or sparks a thought, reach out. I love a good conversation.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"/></svg>
+    </div>
+
+    <!-- ── WORK ── -->
+    <section class="section work reveal" id="work">
+      <div class="container">
+        <span class="section-index">02</span>
+        <span class="section-label">What I Do</span>
+        <h2 class="section-title">Started in sales. Found my home in marketing.</h2>
+        <div class="prose">
+          <p>FMCG, broadband, lease lines. Years of being face to face with customers, figuring out what actually makes people say yes. That sales background is what shaped how I think about marketing today.</p>
+          <p>My honest belief: if you haven't done sales, you're just guessing. Sales teaches you to listen before you pitch. Marketing without that is just noise.</p>
+          <p>Now I'm exploring how AI can make marketers sharper without making their work feel less human. That's the balance I'm chasing.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">FMCG</span>
+          <span class="tag">Broadband</span>
+          <span class="tag">Lease Lines</span>
+          <span class="tag">Sales</span>
+          <span class="tag">Marketing</span>
+          <span class="tag">AI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VALUES ── -->
+    <section class="section values reveal" id="values">
+      <div class="container">
+        <span class="section-index">03</span>
+        <span class="section-label">What I Care About</span>
+        <h2 class="section-title">Things that drive me</h2>
+        <div class="card-grid">
+          <article class="card">
+            <span class="card-num">01</span>
+            <h3>Going with the flow</h3>
+            <p>The people who adapt are the ones who last. Holding on too tight to how things should be just slows you down. I'd rather bend and keep moving.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <h3>Real over polished</h3>
+            <p>I'll take one honest conversation over ten impressive ones any day. I don't care much for performance. What you see is what you get.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <h3>Keep growing</h3>
+            <p>I look back at who I was a year ago and I'm glad I'm not that person anymore. Getting better bit by bit is the whole point for me.</p>
+          </article>
+          <article class="card">
+            <span class="card-num">04</span>
+            <h3>People first</h3>
+            <p>The things that have mattered most in my life came from being around the right people. I take relationships seriously.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-divider wave-divider--flip" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"/></svg>
+    </div>
+
+    <!-- ── LOVES ── -->
+    <section class="section loves reveal" id="loves">
+      <div class="container">
+        <span class="section-index">04</span>
+        <span class="section-label">Life Outside the Screen</span>
+        <h2 class="section-title">The things that fill me up</h2>
+        <div class="loves-grid">
+          <article class="love">
+            <span class="love-emoji">🏏</span>
+            <h3>Outdoor sports</h3>
+            <p>Cricket, football, pickleball. If it's outdoors and there's something to compete for, I'm showing up. Sport has taught me more about people and pressure than anything else.</p>
+          </article>
+          <article class="love">
+            <span class="love-emoji">🎸</span>
+            <h3>Music</h3>
+            <p>Sufi, soul, Bollywood melodies that hit you somewhere deep. The kind of music that slows everything down. And on some days a bit of acoustic pop that makes you want to drive with the windows down. I don't just listen. I sing along. Loudly.</p>
+          </article>
+          <article class="love">
+            <span class="love-emoji">🌊</span>
+            <h3>Traveling</h3>
+            <p>I've chased quiet mountain mornings where the fog doesn't lift till noon. Sat on raw, unhurried beaches where nobody was performing for anyone. Found stillness in the hills where the only sound is wind. Every kind of travel teaches me something about what I actually need.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BLOG ── -->
+    <section class="section blog reveal" id="blog">
+      <div class="container">
+        <span class="section-index">05</span>
+        <span class="section-label">Blog</span>
+        <h2 class="section-title">Things worth saying</h2>
+        <div class="prose">
+          <p>I'll be writing here about marketing, sales, AI, and whatever else is on my mind. No fixed schedule. Just when something feels worth putting down.</p>
+        </div>
+        <div class="blog-empty">
+          <span class="blog-empty-icon">✺</span>
+          <p>First post coming soon. Check back.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"/></svg>
+    </div>
+
+    <!-- ── CONNECT ── -->
+    <section class="section connect reveal" id="connect">
+      <div class="container">
+        <span class="section-index">06</span>
+        <span class="section-label">Connect</span>
+        <h2 class="section-title">Let's talk</h2>
+        <p class="connect-lead">Got something on your mind? Want to collaborate, share an idea, or just say hi? I'm always up for a good chat.</p>
+        <a href="mailto:aakashdamani07@gmail.com" class="big-cta">
+          <span>Say hello</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/aakash-damani-a11201180/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/aakash_damani?igsh=MTQxbjd2djByZGo2dQ%3D%3D&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:aakashdamani07@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer class="footer">
-    <p>© 2026 Aakash Damani &nbsp;·&nbsp; Made with intention.</p>
+    <div class="container footer-inner">
+      <span>© 2026 Aakash Damani</span>
+      <span class="footer-tag">Made in golden hour · Kolkata</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
+  <!-- Three.js as a classic (UMD) script so it runs even from file:// -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="hero3d.js"></script>
 </body>
 </html>
