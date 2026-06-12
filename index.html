@@ -29,9 +29,24 @@
       <li><a href="#blog">Blog</a></li>
       <li><a href="#connect">Connect</a></li>
     </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
-      <span class="toggle-track"><span class="toggle-thumb"></span></span>
-    </button>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </button>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <nav class="nav-drawer" id="navDrawer" aria-hidden="true">
+    <a href="#about" class="drawer-link">About</a>
+    <a href="#work" class="drawer-link">Work</a>
+    <a href="#values" class="drawer-link">Values</a>
+    <a href="#loves" class="drawer-link">Loves</a>
+    <a href="#blog" class="drawer-link">Blog</a>
+    <a href="#connect" class="drawer-link">Connect</a>
   </nav>
 
   <!-- ── HERO ── -->

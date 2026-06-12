@@ -50,6 +50,43 @@ toggle.addEventListener('click', () => {
   document.head.appendChild(runtime);
 })();
 
+// ── Hamburger / mobile drawer ──
+(function initDrawer() {
+  const btn = document.getElementById('navHamburger');
+  const drawer = document.getElementById('navDrawer');
+  if (!btn || !drawer) return;
+
+  function openDrawer() {
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+    drawer.style.display = 'flex';
+    requestAnimationFrame(() => drawer.classList.add('open'));
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    drawer.classList.remove('open');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    drawer.addEventListener('transitionend', () => {
+      if (!drawer.classList.contains('open')) drawer.style.display = '';
+    }, { once: true });
+  }
+
+  btn.addEventListener('click', () => {
+    btn.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer();
+  });
+})();
+
 // ── Nav border on scroll ──
 const nav = document.querySelector('.nav');
 const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 24);
