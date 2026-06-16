@@ -12,39 +12,39 @@
   --maxw: 1100px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* DARK — Autumn Dusk (default) */
-  --bg:        #17110d;
-  --bg-alt:    #1f1711;
-  --bg-card:   #261c15;
-  --line:      #3a2c20;
-  --text:      #f4e8d6;
-  --muted:     #a38b73;
-  --accent:    #f08a4b;   /* sunset coral */
-  --accent-2:  #e0b15a;   /* golden amber */
-  --ocean:     #4f9e95;   /* dusk teal */
-  --glow-1:    #f0884b;
-  --glow-2:    #b9472e;
-  --glow-3:    #2a1812;
-  --grain-op:  0.05;
-  --shadow:    0 30px 60px -30px rgba(0,0,0,0.7);
+  /* DARK — Deep Ocean Night */
+  --bg:        #0b1820;   /* midnight sea */
+  --bg-alt:    #101f2c;   /* dark harbour */
+  --bg-card:   #162838;   /* deep navy */
+  --line:      #1e3a50;   /* ocean ridge */
+  --text:      #e8d8b8;   /* warm sand */
+  --muted:     #6a96b0;   /* sea haze */
+  --accent:    #e86840;   /* coral */
+  --accent-2:  #e8b840;   /* golden sun */
+  --ocean:     #28b4a4;   /* bright sea glass */
+  --glow-1:    #e86840;
+  --glow-2:    #903020;
+  --glow-3:    #081018;
+  --grain-op:  0.045;
+  --shadow:    0 30px 60px -30px rgba(0,0,0,0.8);
 }
 
 body.light {
-  /* LIGHT — Summer Beach */
-  --bg:        #faf2e4;
-  --bg-alt:    #fdf8ee;
+  /* LIGHT — Bright Beach Day */
+  --bg:        #eaf6f8;   /* pale sea */
+  --bg-alt:    #f4fbfc;   /* seafoam */
   --bg-card:   #ffffff;
-  --line:      #e8dcc7;
-  --text:      #2c2017;
-  --muted:     #8a7459;
-  --accent:    #e05f30;   /* sunset orange */
-  --accent-2:  #c79029;   /* amber */
-  --ocean:     #2c7d78;   /* teal */
-  --glow-1:    #ffd089;
-  --glow-2:    #ff9a52;
-  --glow-3:    #ffe9c8;
-  --grain-op:  0.04;
-  --shadow:    0 30px 60px -34px rgba(120,70,30,0.35);
+  --line:      #bcd8e0;   /* shoreline */
+  --text:      #0c2030;   /* deep ocean */
+  --muted:     #4a7890;   /* tide pool */
+  --accent:    #d04820;   /* coral reef */
+  --accent-2:  #c09020;   /* golden sand */
+  --ocean:     #168898;   /* open water */
+  --glow-1:    #f0d060;
+  --glow-2:    #e08040;
+  --glow-3:    #c8eff4;
+  --grain-op:  0.035;
+  --shadow:    0 30px 60px -34px rgba(10,50,80,0.22);
 }
 
 /* ── Base ── */

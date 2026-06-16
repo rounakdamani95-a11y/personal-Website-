@@ -15,16 +15,16 @@ const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 // ── Palettes (dark = autumn dusk, light = summer beach) ──
 const PALETTES = {
   dark: {
-    skyTop:  '#1b100a', skyBot: '#5a2412',
-    deep:    '#16302f', shallow:'#2f7a70',
-    sun:     '#ff8a45', sunGlow:'#ff5e2c',
-    light:   '#ffae7a', fog:    '#3a1d12',
+    skyTop:  '#08101a', skyBot: '#1a3a5a',
+    deep:    '#0a2030', shallow:'#186878',
+    sun:     '#e86840', sunGlow:'#903020',
+    light:   '#e8d8b8', fog:    '#081828',
   },
   light: {
-    skyTop:  '#ffe2b0', skyBot: '#ff9d5c',
-    deep:    '#1d6f76', shallow:'#54bdb0',
-    sun:     '#ffd070', sunGlow:'#ffae4d',
-    light:   '#fff1d6', fog:    '#ffb878',
+    skyTop:  '#a8dce8', skyBot: '#3898b0',
+    deep:    '#0e5870', shallow:'#28a0b8',
+    sun:     '#f0c840', sunGlow:'#e08040',
+    light:   '#f8f0d0', fog:    '#88d0e0',
   },
 };
 
